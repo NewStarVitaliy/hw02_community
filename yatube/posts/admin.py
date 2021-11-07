@@ -12,6 +12,8 @@ class PostAdmin(admin.ModelAdmin):
     list_filter = ('pub_date',)
     list_editable = ('group',)
     empty_value_display = '-пусто-'
+
+
 class GroupAdmin(admin.ModelAdmin):
     # Перечисляем поля, которые должны отображаться в админке
     list_display = ('pk', 'title', 'slug', 'description',)
