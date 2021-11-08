@@ -35,7 +35,6 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 INSTALLED_APPS = [
     'posts.apps.PostsConfig',
     'django.contrib.admin',
-    'ice_cream.apps.IceCreamConfig',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',

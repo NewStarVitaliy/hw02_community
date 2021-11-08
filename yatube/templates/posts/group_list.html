@@ -1,5 +1,6 @@
-{%extends 'base.html'%}
-  {% block content %}  
+{% extends 'base.html' %}
+  {% block title %} Здесь будет информация о группах проекта Yatube {% endblock %}
+  {% block content %}    
     {% for post in posts %}
       <ul>
         <li>
@@ -12,6 +13,5 @@
       <p>{{ post.text| linebreaksbr }}</p>    
       {% if not forloop.last %}<hr>{% endif %}
       {% endfor %} 
-        <!-- под последним постом нет линии -->
   {% endblock %}
 
