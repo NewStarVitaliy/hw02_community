@@ -1,10 +1,11 @@
 from django.shortcuts import get_object_or_404, render
+
 from .models import Group, Post
 
 
 def index(request):
     posts = Post.objects.order_by('-pub_date')[:10]
-    title = 'Последние обновления на сайте'
+    title = 'Это главная страница проекта Yatube'
     context = {
         'title': title,
         'posts': posts,
