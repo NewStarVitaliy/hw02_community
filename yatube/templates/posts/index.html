@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-  {% block title %} {{title}} {% endblock %}
+  {% block title %} {{ title }} {% endblock %}
     {% block content %}
       <h1>Последние обновления на сайте</h1>
       {% for post in posts %}
@@ -17,6 +17,5 @@
         {% endif %}
         {% if not forloop.last %}<hr>{% endif %}
         {% endfor %} 
-        <!-- под последним постом нет линии -->
       </div>  
     {% endblock %}
